@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket Booking Form</title>
+    <style>
+        body{
+            background-color:rgb(159, 183, 77);
+        }
+        h2{
+            text-align: center;
+        }
+        table{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+
+<h2>🏏 Cricket World Cup Ticket Booking Form</h2>
+
+<form action="server.js" method="GET">
+<table border="1" cellpadding="10" cellspacing="2" align="center" width="60%">
+
+    <tr>
+        <td align="right">Full Name:</td>
+        <td><input type="text" name="name"></td>
+    </tr>
+
+    <tr>
+        <td align="right">Email ID:</td>
+        <td><input type="text" name="email"></td>
+    </tr>
+
+    <tr>
+        <td align="right">Password:</td>
+        <td><input type="password" name="password"></td>
+    </tr>
+
+    <tr>
+        <td align="right">Select Match:</td>
+        <td>
+            <select name="match">
+                <option>India vs Australia</option>
+                <option>England vs Pakistan</option>
+                <option>South Africa vs New Zealand</option>
+                <option>Sri Lanka vs Bangaladesh </option>
+                <option>India vs New Zealand</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td align="right">Ticket Type:</td>
+        <td>
+            <input type="radio" name="type"> General
+            <input type="radio" name="type"> Premium
+            <input type="radio" name="type"> VIP
+        </td>
+    </tr>
+
+    <tr>
+        <td align="right">Extras:</td>
+        <td>
+            <input type="checkbox" id="ch_1"> 
+            <label for="ch_1">Food Coupon</label>
+            <input type="checkbox" id="ch_2"> 
+            <label for="ch_2">Parking Pass</label>
+            <input type="checkbox" id="ch_3">
+            <label for="ch_2">Wi-Fi</label>
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td align="right">Address:</td>
+        <td>
+            <textarea rows="4" cols="30"></textarea>
+        </td>
+    </tr>
+
+    <tr align="center">
+        <td colspan="2">
+            <input type="submit" value="Book Ticket">
+            <input type="reset" value="Clear">
+            <input type="button" value="Help">
+        </td>
+    </tr>
+
+</table>
+</form>
+
+</body>
+</html>
